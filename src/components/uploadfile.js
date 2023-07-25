@@ -10,7 +10,7 @@ const Upload=()=>{
     }
     return(
         <div>
-        <h3 align="left">File Uploads</h3>
+        <h3 align="left">File Upload</h3>
         <Input  type="file" name="file" onChange={handlechange}> </Input>
         </div>
     )
