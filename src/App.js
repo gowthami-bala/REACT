@@ -30,6 +30,9 @@ import TableBasic from './components/table';
 import DataGrid from './components/forms/grid';
 import CompnentOne from './components/tasks/component1';
 import OtherComponent from './components/tasks/component2';
+import NormalComponent from './components/pure and regular components/normalcomponents';
+import PureClassComponent from './components/pure and regular components/purecomponents';
+import Parentcomponent from './components/pure and regular components/pure&regular';
 function App() {
   return (
     <div className="App">
@@ -44,7 +47,10 @@ function App() {
       {/* <Destruct name="Gowthami"></Destruct> */}
       {/* <FunClick></FunClick> */}
       {/* <Clicking></Clicking> */}
+      <Parentcomponent></Parentcomponent>
       <Routes>
+        <Route path='/normal' element={<NormalComponent/>}/>
+        <Route path='/pure' element={<PureClassComponent/>}/>
         <Route path="/tablebasic" element={<TableBasic/>}/>
         <Route path='/avatar' element={<SampleAavatar/>}/>
         <Route path="/greet" element={<Greet />} />
@@ -67,7 +73,7 @@ function App() {
         <Route exact path='/Home' element={<Home/>}/>
         <Route path='/login' element={<Login/>} />
         <Route path ='/validate' element={<Formvalidate/>}/>
-        <Route path="/" element={<Navigate replace to="/login" />} />
+        {/* <Route path="/" element={<Navigate replace to="/login" />} /> */}
         <Route path='/DataGrid' element={<DataGrid/>}/>
         <Route path='/ComponentOne' element={<CompnentOne/>}/>
         <Route path='/other' element={<OtherComponent/>}/>

@@ -43,7 +43,7 @@ function CompnentOne() {
     const handlechange = (e) => {
         console.log(e);
         data.find((obj) => {
-            if(obj.id == e.target.value){
+            if(obj.id === e.target.value){
                 setgetdata(obj)
             }
         })

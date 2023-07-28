@@ -14,11 +14,11 @@ function createData(EmpId, FirstName, LastName, Mobile, Age, Email, Password) {
 
 const data = localStorage.getItem("EmpId")
 var finaldata  = []
-// let total= JSON.parse(data)
-// total.map((data)=>{
-// finaldata=data
-//   return finaldata
-// });
+let total= JSON.parse(data)
+total.map((data)=>{
+finaldata=data
+  return finaldata
+});
 
 const rows = [
   createData(finaldata.EmpId,finaldata.FirstName, finaldata.LastName,finaldata.Mobile,finaldata.Age,finaldata.Email,finaldata.Password),
